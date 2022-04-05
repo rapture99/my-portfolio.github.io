@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.cot{
+    height: 100vh;
+    width: 100%;
+}
+.cot img{
+    z-index: 0;
+    object-fit:cover;
+    overflow: hidden;   
+    filter:contrast( 128%) brightness(80%);
+}
+.poster{
+    object-fit:fill;
+    position:absolute;
+    height: 120px;
+    width: 90px;
+    top: 330px;
+    left: 20%;
+    z-index: 1;
+    filter:brightness(100%) contrast(100%);
+    box-shadow: 0px 19px 5px 5px rgb(3, 3, 3);
+}
+.poster:hover{
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    height: 100vh;
+    width: 100vh;
+    transition: all 0.5s linear;
+}
+.cot1{
+    position:absolute;
+    height: 50vh;
+    top: 50%;
+    left: 0%;
+    width: 420vh;
+    animation:frtl 10s linear infinite; 
+    opacity: 1;
+}
+
+@keyframes frtl{
+from{left:1400px;}
+to{left:-2700px;}
+}
+.crop{
+    top: 60px;
+    position:absolute;
+    height:280px;
+    filter:contrast(13%) brightness(20%);
+
+}
+.van{
+    left: 800px;
+    top: 60px;
+    position:absolute;
+    height:290px;
+    filter:contrast( 180%) brightness(30%);
+}   
+.redc{
+    left: 1400px;
+    top: 175px;
+    position:absolute;
+    height:170px;
+    filter:contrast( 180%) brightness(40%);
+}   
+.rbg{ 
+    left:2000px;
+   top: 50px;
+   position:absolute;
+   height:290px;
+   filter:contrast( 180%) brightness(30%);
+
+}
+.cot2{ 
+    position:absolute;
+    height: 50vh;
+    top: 50%;
+    width: 390vh;
+    animation-name: righttoleft ;
+    animation-duration: 7s;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite 
+}
+
+@keyframes righttoleft
+ {
+from {right:1000px;}
+to{ right:-2500px;}
+}
+.porche{
+    left: 800px;
+    top: 190px;
+    position:absolute;
+    height:140px;
+    filter:contrast( 180%) brightness(40%);
+ 
+}
+.icevan{
+    left: 150px;
+    top: 10px;
+    position:absolute;
+    height:340px;
+    filter:contrast( 180%) brightness(40%);
+}
+.wc{
+    left: 150px;
+    top: 40px;
+    position:absolute;
+    height:290px;
+    filter:contrast( 180%) brightness(60%);
+
+}
